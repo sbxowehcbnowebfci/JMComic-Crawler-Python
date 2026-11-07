@@ -13,7 +13,7 @@ jm22866
 
 
 '''
-download_album('123', extra=Feature.export_pdf)
+
 
 
 # 单独下载章节
@@ -425,6 +425,7 @@ def log_before_raise():
         write_text(path, '\n'.join(content))
 
     JmModuleConfig.register_exception_listener(JmcomicException, exception_listener)
+download_album('123', extra=Feature.export_pdf)
 
 
 if __name__ == '__main__':
