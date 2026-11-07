@@ -5,6 +5,7 @@ from PIL import Image
 
 from jmcomic import *
 from jmcomic.cli import JmcomicUI
+from jmcomic import download_album, Feature
 
 # 下方填入你要下载的本子的id，一行一个，每行的首尾可以有空白字符
 jm_albums = '''
@@ -12,6 +13,8 @@ jm22866
 
 
 '''
+download_album('123', extra=Feature.export_pdf)
+
 
 # 单独下载章节
 jm_photos = '''
